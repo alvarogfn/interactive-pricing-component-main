@@ -10,28 +10,34 @@
 </head>
 
 <body>
-  <div id="app">
-    <header>
-      <h1> Simple, traffic-based pricing </h1>
-      <p>Sign-up for our 30-day trial. No credit card required. </p>
+  <div class="app">
+    <header class="header">
+      <h1 class="header__title"> Simple, traffic-based pricing </h1>
+      <p class="header__subtitle">Sign-up for our 30-day trial. No credit card required. </p>
     </header>
     <main>
       <section>
         <p>Unlimited websites</p>
         <p>100% data ownership</p>
         <p>Email reports</p>
-        </section>
-      <section>
-        <p><span>100K</span> Pageviews</p>
-        <form>
-          <input type="range">
-        </form>
-        <p><span>$</span>/month</p>
       </section>
       <section>
-        <p>Monthly Billing</p>
-        <input type="checkbox" name="" id="">
-        Yearly Billing 25% discount
+        <form>
+
+          <label for="amount_traffic">
+            <p><span>100K</span> Pageviews</p>
+          </label>
+          <input type="range" name="amount_traffic">
+
+          <p><span>$</span>/month</p>
+
+          <label for="monthly_discount">
+            <p>Monthly Billing</p>
+          </label>
+          <input type="checkbox" name="" id="input">
+          
+          <p>Yearly Billing 25% discount</p>
+        </form>
       </section>
     </main>
     <footer>
