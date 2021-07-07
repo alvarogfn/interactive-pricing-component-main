@@ -14,7 +14,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
   /* font-family: 'Manrope', sans-serif; */
-  
+
 * {
   margin: 0;
   padding: 0;
@@ -26,4 +26,5 @@ body {
   background-position: top right;
   background-size: 100vw 50vh;
   background-repeat: no-repeat;
+  font-family: 'Manrope', sans-serif;
 }
