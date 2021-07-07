@@ -29,6 +29,8 @@ body {
 
   font-family: 'Manrope', sans-serif;
 
+  color: var(--Grayish-Blue);
+
   width: 100vw;
   height: 100vh;
   max-width: 100%;
@@ -65,7 +67,43 @@ body {
 
   .header__paragraph {
     font-size: .9rem;
-    color: var(--Grayish-Blue);
     font-weight: 600;
 
+  }
+
+  
+.pricing {
+  border-radius: 10px;
+  box-shadow: .5px .5px 22px var(--Light-Grayish-Blue);
+  background-color: var(--White);
+
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.advantages {
+  grid-row: 6;
+
+  font-size: .9rem;
+  text-align: center;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  row-gap: 10px;
+
+  padding: 25px 0;
+
+  border-top: 1px solid var(--Light-Grayish-Blue);
+}
+
+  .advantages__item {
+    background-image: url("assets/icon-check.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+
+    padding-left: 20px;
+
+    font-weight: 500;
   }
