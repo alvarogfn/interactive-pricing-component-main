@@ -29,14 +29,43 @@ body {
 
   font-family: 'Manrope', sans-serif;
 
-  width: calc(100% - 10vw);
+  width: 100vw;
   height: 100vh;
   max-width: 100%;
   max-height: 100%;
 
-  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: calc(100% - 10vw);
+}
+
+.header {
+  background-image: url("assets/pattern-circles.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  text-align: center;
 
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-flow: column nowrap;
+  row-gap: 5px;
+
+  min-height: 200px;
 }
+
+  .header__title {
+    font-size: 1.25rem;
+    color: var(--Dark-Desaturated-Blue);
+    margin-bottom: 5px;
+  }
+
+  .header__paragraph {
+    font-size: .9rem;
+    color: var(--Grayish-Blue);
+    font-weight: 600;
+
+  }
