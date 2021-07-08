@@ -12,7 +12,7 @@
   --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
   /* font-family: 'Manrope', sans-serif; */
 
 * {
@@ -23,11 +23,13 @@
 
 body {
   background-image: url("./assets/bg-pattern.svg");
+  background-color: var(--Very-Pale-Blue);
   background-position: top right;
   background-size: 100vw 50vh;
   background-repeat: no-repeat;
 
   font-family: 'Manrope', sans-serif;
+  font-weight: 600;
 
   color: var(--Grayish-Blue);
 
@@ -38,6 +40,10 @@ body {
 
   display: flex;
   justify-content: center;
+}
+
+input {
+  width: 100%;
 }
 
 .app {
@@ -74,12 +80,31 @@ body {
   
 .pricing {
   border-radius: 10px;
-  box-shadow: .5px .5px 22px var(--Light-Grayish-Blue);
+  box-shadow: .5px .5px 5px rgba(0, 0, 0, .1);
   background-color: var(--White);
 
   display: grid;
   grid-template-columns: 1fr;
 }
+
+  .pricing__choice {
+    padding: 0 30px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .pricing__amount {
+    text-transform: uppercase;
+    
+    font-weight: 700;
+    font-size: .8rem;
+
+    padding: 25px;
+
+    letter-spacing: .05rem;
+  }
 
 .advantages {
   grid-row: 6;
