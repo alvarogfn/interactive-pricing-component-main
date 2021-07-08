@@ -1,19 +1,19 @@
 :root {
-  --Full-Slider-Bar: hsl(174, 77%, 80%);
+  --Soft-Cyan: hsl(174, 77%, 80%);
   --Strong-Cyan: hsl(174, 86%, 45%);
   --Light-Grayish-Red: hsl(14, 92%, 95%);
   --Light-Red: hsl(15, 100%, 70%);
   --Pale-Blue: hsl(226, 100%, 87%);
   --White: hsl(0, 0%, 100%);
   --Very-Pale-Blue: hsl(230, 100%, 99%);
-  --Light-Grayish-Blue: hsl(224, 65%, 95%);
+  --Very-Light-Grayish-Blue: hsl(224, 65%, 95%);
   --Light-Grayish-Blue: hsl(223, 50%, 87%);
   --Grayish-Blue: hsl(225, 20%, 60%);
   --Dark-Desaturated-Blue: hsl(227, 35%, 25%);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
-  /* font-family: 'Manrope', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+/* font-family: 'Manrope', sans-serif; */
 
 * {
   margin: 0;
@@ -28,7 +28,7 @@ body {
   background-size: 100vw 50vh;
   background-repeat: no-repeat;
 
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   font-weight: 600;
 
   color: var(--Grayish-Blue);
@@ -44,6 +44,30 @@ body {
 
 input {
   width: 100%;
+}
+
+input[type="range"] {
+  appearance: none;
+  background: transparent;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+}
+
+input[type="range"]::-ms-track {
+  cursor: pointer;
+  background-color: transparent;
+  border: transparent;
+  color: transparent;
+}
+
+input[type="range"]::-moz-range-thumb {
+  border: none;
+}
+
+input[type="range"]:focus {
+  outline: none;
 }
 
 .app {
@@ -65,51 +89,100 @@ input {
   min-height: 200px;
 }
 
-  .header__title {
-    font-size: 1.25rem;
-    color: var(--Dark-Desaturated-Blue);
-    margin-bottom: 5px;
-  }
+.header__title {
+  font-size: 1.25rem;
+  color: var(--Dark-Desaturated-Blue);
+  margin-bottom: 5px;
+}
 
-  .header__paragraph {
-    font-size: .9rem;
-    font-weight: 600;
+.header__paragraph {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
 
-  }
-
-  
 .pricing {
   border-radius: 10px;
-  box-shadow: .5px .5px 5px rgba(0, 0, 0, .1);
+  box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.1);
   background-color: var(--White);
 
   display: grid;
   grid-template-columns: 1fr;
 }
 
-  .pricing__choice {
-    padding: 0 30px;
-    
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-  }
+.pricing__choice {
+  padding: 0 30px;
 
-  .pricing__amount {
-    text-transform: uppercase;
-    
-    font-weight: 700;
-    font-size: .8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  row-gap: 50px;
+}
 
-    padding: 25px;
+.pricing__traffic {
+  text-transform: uppercase;
 
-    letter-spacing: .05rem;
-  }
+  font-weight: 700;
+  font-size: 0.8rem;
+
+  padding: 25px;
+
+  letter-spacing: 0.05rem;
+}
+
+.pricing__range::-moz-range-thumb {
+  background-color: var(--Strong-Cyan);
+  background-image: url("assets/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 12px;
+  border-radius: 100%;
+  box-shadow: 0px 15px 40px var(--Strong-Cyan);
+}
+
+.pricing__range::-ms-thumb {
+  background-color: var(--Strong-Cyan);
+  background-image: url("assets/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 12px;
+  border-radius: 100%;
+  box-shadow: 0px 15px 40px var(--Strong-Cyan);
+}
+
+.pricing__range::-webkit-slider-thumb {
+  background-color: var(--Strong-Cyan);
+  background-image: url("assets/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 100%;
+  box-shadow: 0px 15px 40px var(--Strong-Cyan);
+  width: 40px;
+  height: 40px;
+  transform: translateY(-40%);
+}
+
+.pricing__range::-moz-range-track {
+  background-color: var(--Very-Light-Grayish-Blue);
+  border-radius: 10px;
+  height: 10px;
+}
+
+.pricing__range::-webkit-slider-runnable-track {
+  background-color: var(--Very-Light-Grayish-Blue);
+  border-radius: 10px;
+  height: 10px;
+}
+
+.pricing__range::-moz-range-progress {
+  background-color: var(--Soft-Cyan);
+  height: 10px;
+  border-radius: 10px;
+}
 
 .advantages {
   grid-row: 6;
 
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-align: center;
 
   display: flex;
@@ -123,12 +196,12 @@ input {
   border-top: 1px solid var(--Light-Grayish-Blue);
 }
 
-  .advantages__item {
-    background-image: url("assets/icon-check.svg");
-    background-repeat: no-repeat;
-    background-position: left center;
+.advantages__item {
+  background-image: url("assets/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
 
-    padding-left: 20px;
+  padding-left: 20px;
 
-    font-weight: 500;
-  }
+  font-weight: 500;
+}

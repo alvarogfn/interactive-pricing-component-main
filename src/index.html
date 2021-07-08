@@ -25,18 +25,18 @@
       <section>
         <form class="pricing__choice">
 
-          <label for="amount_traffic" class="pricing__amount">
-            <p><span>100K</span> Pageviews</p>
+          <label for="amount_traffic" class="pricing__traffic">
+            <p><span class="amount__pageviews">0</span>K Pageviews</p>
           </label>
-          <input type="range" name="amount_traffic">
+          <input class="pricing__range" type="range" name="amount_traffic" min="0" max="200">
 
-          <p><span>$</span>/month</p>
+          <p>$<span class="amount__price"></span>/month</p>
 
           <label for="monthly_discount">
             <p>Monthly Billing</p>
           </label>
           <input type="checkbox" name="" id="input">
-          
+
           <p>Yearly Billing 25% discount</p>
         </form>
       </section>
@@ -48,6 +48,7 @@
       </div>
     </footer>
   </div>
+  <script src="app.js"></script>
 </body>
 
 </html>
