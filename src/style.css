@@ -13,9 +13,10 @@
   --number: 50%;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
-/* font-family: 'Manrope', sans-serif; */
-
+@font-face {
+  font-family: Manrope;
+  src: url("./fonts/manrope.ttf");
+}
 * {
   margin: 0;
   padding: 0;
@@ -29,8 +30,7 @@ body {
   background-size: 100vw 50vh;
   background-repeat: no-repeat;
 
-  font-family: "Manrope", sans-serif;
-  font-weight: 600;
+  font-family: Manrope, sans-serif;
 
   color: var(--Grayish-Blue);
 
@@ -93,12 +93,13 @@ input[type="range"]:focus {
 
 .presentation__features {
   font-size: 1.25rem;
+  font-weight: 800;
   color: var(--Dark-Desaturated-Blue);
   margin-bottom: 5px;
 }
 
 .presentation__text {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
 }
 
@@ -109,26 +110,45 @@ input[type="range"]:focus {
 
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+.plan__start {
+  grid-row: 3;
+
+  width: 40%;
+
+  margin-inline: auto;
+
+  padding: 10px 20px;
+
+  background-color: var(--Dark-Desaturated-Blue);
+  color: (var(--Pale-Blue));
+
+  font-weight: 800;
+  font-family: "Manrope";
+
+  border: none;
+  border-radius: 20px;
 }
 
 .traffic {
-  padding: 0 30px;
+  padding: 40px 30px;
 
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: space- ;
   row-gap: 50px;
 }
 
 .traffic__amount {
   text-transform: uppercase;
 
-  font-weight: 700;
+  font-weight: 800;
   font-size: 0.8rem;
 
-  padding: 25px;
-
-  letter-spacing: 0.05rem;
+  letter-spacing: 0.1rem;
 }
 
 .traffic__range::-moz-range-thumb {
@@ -272,7 +292,7 @@ input[type="range"]:focus {
 }
 
 .advantages {
-  grid-row: 6;
+  grid-row: 2;
 
   font-size: 0.9rem;
   text-align: center;
