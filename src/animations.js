@@ -1,6 +1,10 @@
-class Input_range_progress {
+import { Element } from "./elements.js";
+
+export { Input_range_progress };
+
+class Input_range_progress extends Element {
   constructor(query) {
-    this.el = document.querySelector(query);
+    super(query);
     this.max_value = this.el.getAttribute("max");
     this.value = this.el.value;
 
@@ -17,9 +21,7 @@ class Input_range_progress {
     this.el.style.setProperty("--number", `${percentage}%`);
   }
   calculate_attribute_percentage() {
-    let actual_value = (this.value * 100) / this.max_value; // 
+    let actual_value = (this.value * 100) / this.max_value; //
     return actual_value;
   }
 }
-
-input_range = new Input_range_progress(".pricing__range");
