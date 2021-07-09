@@ -236,7 +236,7 @@ input[type="range"]:focus {
 
 .monthly {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   column-gap: 20px;
 
@@ -244,6 +244,8 @@ input[type="range"]:focus {
   height: 40px;
 
   font-size: 0.8rem;
+
+  margin-inline: auto;
 }
 
 .monthly__text {
@@ -271,7 +273,8 @@ input[type="range"]:focus {
   border-radius: 30px;
 
   position: relative;
-
+  
+  min-width: 60px;
   width: 60px;
   height: 30px;
 

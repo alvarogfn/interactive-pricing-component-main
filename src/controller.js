@@ -13,7 +13,6 @@ export class Controller {
     this.input.el.addEventListener("change", () => {
       let actual_value = (this.input.el.value * 100) / this.input.el.max;
       let price_by_actual_value = (actual_value * 32) / 100;
-      price_by_actual_value = Math.round(price_by_actual_value);
       this.price.el.innerText = price_by_actual_value.toLocaleString("en-US", {
         style: "currency",
         currency: "USD",
