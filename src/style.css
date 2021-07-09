@@ -76,7 +76,7 @@ input[type="range"]:focus {
   width: calc(100% - 10vw);
 }
 
-.header {
+.presentation {
   background-image: url("assets/pattern-circles.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -91,18 +91,18 @@ input[type="range"]:focus {
   min-height: 200px;
 }
 
-.header__title {
+.presentation__features {
   font-size: 1.25rem;
   color: var(--Dark-Desaturated-Blue);
   margin-bottom: 5px;
 }
 
-.header__paragraph {
+.presentation__text {
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.pricing {
+.plan {
   border-radius: 10px;
   box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.1);
   background-color: var(--White);
@@ -111,7 +111,7 @@ input[type="range"]:focus {
   grid-template-columns: 1fr;
 }
 
-.pricing__choice {
+.traffic {
   padding: 0 30px;
 
   display: flex;
@@ -120,7 +120,7 @@ input[type="range"]:focus {
   row-gap: 50px;
 }
 
-.pricing__traffic {
+.traffic__amount {
   text-transform: uppercase;
 
   font-weight: 700;
@@ -131,7 +131,7 @@ input[type="range"]:focus {
   letter-spacing: 0.05rem;
 }
 
-.pricing__range::-moz-range-thumb {
+.traffic__range::-moz-range-thumb {
   background-color: var(--Strong-Cyan);
   background-image: url("assets/icon-slider.svg");
   background-repeat: no-repeat;
@@ -141,16 +141,15 @@ input[type="range"]:focus {
   box-shadow: 0px 15px 40px var(--Strong-Cyan);
 }
 
-.pricing__range:hover::-moz-range-thumb {
+.traffic__range:hover::-moz-range-thumb {
   background-color: hsl(174, 86%, 55%);
 }
 
-.pricing__range:active::-moz-range-thumb {
+.traffic__range:active::-moz-range-thumb {
   background-color: hsl(174, 86%, 35%);
-
 }
 
-.pricing__range::-ms-thumb {
+.traffic__range::-ms-thumb {
   background-color: var(--Strong-Cyan);
   background-image: url("assets/icon-slider.svg");
   background-repeat: no-repeat;
@@ -160,7 +159,7 @@ input[type="range"]:focus {
   box-shadow: 0px 15px 40px var(--Strong-Cyan);
 }
 
-.pricing__range::-webkit-slider-thumb {
+.traffic__range::-webkit-slider-thumb {
   background-color: var(--Strong-Cyan);
   background-image: url("assets/icon-slider.svg");
   background-repeat: no-repeat;
@@ -172,13 +171,13 @@ input[type="range"]:focus {
   transform: translateY(-40%);
 }
 
-.pricing__range::-moz-range-track {
+.traffic__range::-moz-range-track {
   background-color: var(--Very-Light-Grayish-Blue);
   border-radius: 10px;
   height: 10px;
 }
 
-.pricing__range::-webkit-slider-runnable-track {
+.traffic__range::-webkit-slider-runnable-track {
   background: linear-gradient(
     90deg,
     var(--Soft-Cyan) var(--number),
@@ -188,10 +187,27 @@ input[type="range"]:focus {
   height: 10px;
 }
 
-.pricing__range::-moz-range-progress {
+.traffic__range::-moz-range-progress {
   background-color: var(--Soft-Cyan);
   height: 10px;
   border-radius: 10px;
+}
+
+.traffic__signature {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+
+  font-weight: normal;
+}
+
+.traffic__price {
+  color: var(--Dark-Desaturated-Blue);
+
+  font-size: 2rem;
+  font-weight: bold;
+
+  margin-right: 0.6rem;
 }
 
 .monthly {
