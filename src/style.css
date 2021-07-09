@@ -206,6 +206,12 @@ input[type="range"]:focus {
 
   width: 60px;
   height: 30px;
+
+  transition: background 200ms;
+}
+
+.checkbox--active {
+  background-color: var(--Strong-Cyan);
 }
 
 .checkbox__box {
