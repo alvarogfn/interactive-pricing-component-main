@@ -32,12 +32,16 @@
 
           <p><span class="amount__price">$16.0</span>/month</p>
 
-          <label for="monthly_discount">
-            <p>Monthly Billing</p>
-          </label>
-          <input type="checkbox" name="" id="input">
+          <div class="monthly">
+            <p class="monthly__text">Monthly Billing</p>
+            <div class="checkbox">
+              <input class="checkbox__box" type="checkbox" name="monthly_discount" id="monthly_discount">
+              <label class="checkbox__circle" for="monthly_discount">
+              </label>
+            </div>
+            <p class="monthly__text">Yearly Billing 25% discount</p>
+          </div>
 
-          <p>Yearly Billing 25% discount</p>
         </form>
       </section>
     </main>
@@ -48,8 +52,7 @@
       </div>
     </footer>
   </div>
-  <script src="range_gradient_bg.js"></script>
-  <script src="app.js"></script>
+  <script src="./app.js" type="module"></script>
 </body>
 
 </html>
