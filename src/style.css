@@ -76,6 +76,10 @@ input[type="range"]:focus {
   width: calc(100% - 10vw);
 }
 
+.acessibility {
+  display: none;
+}
+
 .presentation {
   background-image: url("assets/pattern-circles.svg");
   background-position: center;
@@ -138,7 +142,7 @@ input[type="range"]:focus {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: space- ;
+  justify-content: space-;
   row-gap: 50px;
 }
 
@@ -242,6 +246,25 @@ input[type="range"]:focus {
   font-size: 0.8rem;
 }
 
+.monthly__text {
+  flex-shrink: 0;
+}
+
+.monthly__discount {
+  background-color: var(--Light-Grayish-Red);
+  color: var(--Light-Red);
+
+  font-weight: 800;
+  font-size: 0.75rem;
+
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.monthly__discount::before {
+  content: "-";
+}
+
 .checkbox {
   background-color: var(--Light-Grayish-Blue);
 
@@ -285,10 +308,6 @@ input[type="range"]:focus {
   cursor: pointer;
 
   transition: All 300ms ease;
-}
-
-.monthly__text {
-  flex-shrink: 0;
 }
 
 .advantages {
