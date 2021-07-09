@@ -12,7 +12,7 @@ class Input_range_progress extends Element {
       this.value = this.el.value;
     });
 
-    this.el.addEventListener("input", () => {
+    this.el.addEventListener("change", () => {
       let percentage = this.calculate_attribute_percentage();
       this.set_attribute(percentage);
     });

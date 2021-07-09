@@ -141,6 +141,15 @@ input[type="range"]:focus {
   box-shadow: 0px 15px 40px var(--Strong-Cyan);
 }
 
+.pricing__range:hover::-moz-range-thumb {
+  background-color: hsl(174, 86%, 55%);
+}
+
+.pricing__range:active::-moz-range-thumb {
+  background-color: hsl(174, 86%, 35%);
+
+}
+
 .pricing__range::-ms-thumb {
   background-color: var(--Strong-Cyan);
   background-image: url("assets/icon-slider.svg");
