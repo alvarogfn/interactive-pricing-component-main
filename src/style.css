@@ -355,3 +355,35 @@ input[type="range"]:focus {
 
   font-weight: 500;
 }
+
+@media screen and (orientation: landscape) and (min-width: 1440px) {
+  .app {
+    width: calc(100% - 60vw);
+  }
+  .presentation {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-flow: row wrap; 
+    row-gap: 5px;
+    column-gap: 5px;
+  }
+
+  .presentation__features {
+    font-size: 1.8rem;
+    flex-basis: 100%;
+  }
+
+  .presentation__text {
+    flex-basis: 45%;
+    align-self: flex-start;
+
+    text-align: right;
+
+    font-size: .935rem;
+  }
+  .presentation__text:last-child {
+    text-align: left;
+    flex-basis: 40%;
+  }
+}
