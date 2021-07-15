@@ -122,9 +122,12 @@ input[type="range"]:focus {
   margin-bottom: 75px;
 }
 
-.plan__start {
-  grid-row: 3;
+.start {
+  text-align: center;
+  height: max-content;
+}
 
+.start__button {
   width: 50%;
 
   margin-inline: auto;
@@ -333,8 +336,6 @@ input[type="range"]:focus {
 }
 
 .advantages {
-  grid-row: 2;
-
   font-size: 0.9rem;
   text-align: center;
 
@@ -346,7 +347,6 @@ input[type="range"]:focus {
 
   padding: 25px 0;
 
-  border-top: 1px solid var(--Light-Grayish-Blue);
 }
 
 .advantages__item {
@@ -410,14 +410,22 @@ input[type="range"]:focus {
     display: initial;
   }
   .monthly__percentage::before {
-    content: '';
+    content: "";
   }
+
   .advantages {
-    grid-row: 2;
-    grid-column: 1;
+    align-items: flex-start;
+    padding: 40px;
   }
-  .plan__start {
-    grid-row: 2;
-    grid-column: 2;
+
+  .fix {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--Light-Grayish-Blue);
+
+  }
+
+  .start {
+    flex-grow: 1;
   }
 }
