@@ -112,7 +112,7 @@ input[type="range"]:focus {
 
 .plan {
   border-radius: 10px;
-  box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.01);
+  box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.05);
   background-color: var(--White);
 
   display: grid;
@@ -347,6 +347,7 @@ input[type="range"]:focus {
 
   padding: 25px 0;
 
+  border-top: 1px solid var(--Very-Light-Grayish-Blue);
 }
 
 .advantages__item {
@@ -361,14 +362,13 @@ input[type="range"]:focus {
 
 @media screen and (orientation: landscape) and (min-width: 1440px) {
   .app {
-    width: calc(100% - 60vw);
+    width: calc(100% - 64vw);
   }
   .presentation {
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-flow: row wrap;
-    row-gap: 5px;
     column-gap: 5px;
   }
   .presentation__features {
@@ -391,13 +391,17 @@ input[type="range"]:focus {
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 45px 50px 10px;
   }
   .traffic__amount {
     order: 1;
+    font-size: 0.9rem;
   }
   .traffic__signature {
     order: 2;
+  }
+  .traffic__price {
+    font-size: 2.5rem;
   }
   .traffic__range {
     order: 3;
@@ -416,16 +420,18 @@ input[type="range"]:focus {
   .advantages {
     align-items: flex-start;
     padding: 40px;
+    border-top: none;
   }
 
   .fix {
     display: flex;
     align-items: center;
-    border-top: 1px solid var(--Light-Grayish-Blue);
-
+    border-top: 1px solid var(--Very-Light-Grayish-Blue);
   }
 
   .start {
     flex-grow: 1;
+
+    margin-top: 45px;
   }
 }
